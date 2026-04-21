@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Log: Daily Report Printer — Charles Kerbaj</title>
+  <title>Build Log: Daily Report Printer, Charles Kerbaj</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -56,26 +56,26 @@
       <span class="wip-badge">In Progress</span>
     </div>
     <h1>Build Log: The <em>Daily Report</em> Printer</h1>
-    <p class="post-lead">I'm building a receipt printer that connects to my Canvas assignments, Google Calendar, and Claude AI to print out my day every morning. Here's where I'm at — and the problem I didn't expect.</p>
+    <p class="post-lead">I'm building a receipt printer that connects to my Canvas assignments, Google Calendar, and Claude AI to print out my day every morning. Here's where I'm at, and the problem I didn't expect.</p>
     <div class="post-body">
-      <p>The idea is simple. Every morning, instead of opening five different apps to figure out what I need to do, I press one button and a small thermal receipt printer spits out a clean, scannable summary of my day. Classes, assignments due, meetings, tasks — all in one place, physical, no screen.</p>
+      <p>The idea is simple. Every morning, instead of opening five different apps to figure out what I need to do, I press one button and a small thermal receipt printer spits out a clean, scannable summary of my day. Classes, assignments due, meetings, tasks, all in one place, physical, no screen.</p>
       <p>The technical side is straightforward in theory. Pull data from Canvas via API, pull events from Google Calendar via API, feed it all to Claude to summarize and format, send the output to the printer. In practice, one part of this has been way harder than I expected.</p>
 
       <h2>The <em>Format Problem</em></h2>
       <p>Getting the data wasn't the hard part. The APIs work, the printer works, Claude works. The problem is figuring out how to format the output in a way that's actually useful on a 58mm thermal receipt.</p>
-      <p>You have about 32 characters per line. No color. No font sizes. Just text and spacing. The first version I printed was basically unreadable — it was a wall of information that required just as much mental processing as opening Canvas manually would have.</p>
+      <p>You have about 32 characters per line. No color. No font sizes. Just text and spacing. The first version I printed was basically unreadable, it was a wall of information that required just as much mental processing as opening Canvas manually would have.</p>
 
-      <div class="pull-quote"><p>"The goal isn't to print everything. It's to print exactly what you need to know — nothing more, nothing less."</p></div>
+      <div class="pull-quote"><p>"The goal isn't to print everything. It's to print exactly what you need to know, nothing more, nothing less."</p></div>
 
-      <p>That's the real design challenge. How do you compress a full day's worth of information into something you can read in 30 seconds and immediately know what to do? It's the same problem good dashboards and good trading setups have — signal vs. noise.</p>
+      <p>That's the real design challenge. How do you compress a full day's worth of information into something you can read in 30 seconds and immediately know what to do? It's the same problem good dashboards and good trading setups have, signal vs. noise.</p>
 
       <h2>What I've <em>Figured Out</em></h2>
-      <p>The current approach is hierarchy. Not everything gets the same weight. An assignment due today is more important than a lecture that meets every week. A meeting with a specific person is more important than a general reminder. Claude handles the prioritization — I prompt it to rank by urgency and cut anything that doesn't require action today.</p>
+      <p>The current approach is hierarchy. Not everything gets the same weight. An assignment due today is more important than a lecture that meets every week. A meeting with a specific person is more important than a general reminder. Claude handles the prioritization, I prompt it to rank by urgency and cut anything that doesn't require action today.</p>
       <p>The format that's working best right now is three sections: <strong>Today's schedule</strong> (time-blocked), <strong>Must do</strong> (hard deadlines), and <strong>On deck</strong> (things coming up in the next 48 hours). Short, scannable, no clutter.</p>
 
       <h2>What's <em>Next</em></h2>
-      <p>The formatting is close but not perfect yet. I'm also working on the trigger mechanism — ideally it prints automatically when I wake up rather than requiring me to press a button, which somewhat defeats the purpose. The goal is to wake up, go to the printer, and have the receipt already waiting.</p>
-      <p>More updates as it progresses. If you're building something similar or have thoughts on the format problem, reach out — genuinely curious how other people are thinking about this.</p>
+      <p>The formatting is close but not perfect yet. I'm also working on the trigger mechanism, ideally it prints automatically when I wake up rather than requiring me to press a button, which somewhat defeats the purpose. The goal is to wake up, go to the printer, and have the receipt already waiting.</p>
+      <p>More updates as it progresses. If you're building something similar or have thoughts on the format problem, reach out, genuinely curious how other people are thinking about this.</p>
     </div>
     <div class="post-footer">
       <span class="post-footer-tag">Build Log · Python · AI · Automation</span>
