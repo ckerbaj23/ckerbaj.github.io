@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Is a Mental Game, Charles Kerbaj</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #f7f4ee; --ink: #1c1a17; --ink2: #6b6456; --ink3: #a89e8e;
+      --gold: #9a7c3f; --border: rgba(28,26,23,0.1);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Jost', system-ui, sans-serif;
+    }
+    body.dark { --cream: #161410; --ink: #f0ede8; --ink2: #a89e8e; --ink3: #6b6456; --gold: #c4a05a; --border: rgba(240,237,232,0.09); }
+    body { font-family: var(--sans); background: var(--cream); color: var(--ink); font-size: 17px; line-height: 1.75; font-weight: 300; transition: background 0.35s, color 0.35s; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 4vw; background: rgba(247,244,238,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    body.dark nav { background: rgba(22,20,16,0.92); }
+    .nav-logo { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--ink); text-decoration: none; }
+    .nav-logo em { font-style: italic; color: var(--gold); }
+    .nav-back { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); text-decoration: none; transition: color 0.2s; }
+    .nav-back:hover { color: var(--gold); }
+    .dark-toggle { background: none; border: 1px solid var(--border); cursor: pointer; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--ink2); transition: border-color 0.2s, color 0.2s; }
+    .dark-toggle:hover { border-color: var(--gold); color: var(--gold); }
+    .post-wrap { max-width: 680px; margin: 0 auto; padding: 9rem 2rem 6rem; }
+    .post-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+    .post-cat { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+    .post-date { font-size: 0.78rem; color: var(--ink3); }
+    h1 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 300; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; }
+    h1 em { font-style: italic; }
+    .post-lead { font-size: 1.15rem; color: var(--ink2); line-height: 1.8; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); font-style: italic; font-family: var(--serif); }
+    .post-body p { color: var(--ink2); margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.85; }
+    .post-body p strong { color: var(--ink); font-weight: 400; }
+    .post-body h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; color: var(--ink); margin: 2.5rem 0 1rem; line-height: 1.2; }
+    .post-body h2 em { font-style: italic; color: var(--gold); }
+    .pull-quote { border-left: 2px solid var(--gold); padding: 0.5rem 0 0.5rem 1.5rem; margin: 2.5rem 0; }
+    .pull-quote p { font-family: var(--serif); font-size: 1.3rem; font-style: italic; color: var(--ink); line-height: 1.5; margin: 0; }
+    .post-footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .post-footer-tag { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink3); }
+    .back-link { font-size: 0.78rem; letter-spacing: 0.06em; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(154,124,63,0.3); padding-bottom: 1px; }
+  </style>
+</head>
+<body>
+  <script>if (localStorage.getItem('dark') !== '0') document.body.classList.add('dark');</script>
+  <nav>
+    <a class="nav-logo" href="index.html">Charles <em>Kerbaj</em></a>
+    <a class="nav-back" href="index.html#blog">← Back to Writing</a>
+    <button class="dark-toggle" id="dt">☾</button>
+  </nav>
+  <article class="post-wrap">
+    <div class="post-meta">
+      <span class="post-cat">Trading & Markets</span>
+      <span class="post-date">April 2025</span>
+    </div>
+    <h1>Trading Is a <em>Mental Game.</em><br>The Strategy Is the Easy Part.</h1>
+    <p class="post-lead">After six years in the markets, equities, options, futures, the biggest thing I've learned has nothing to do with charts. It's about what's happening between your ears.</p>
+    <div class="post-body">
+      <p>Most people who get into trading think the hard part is finding the right strategy. They spend months backtesting systems, watching YouTube videos, reading books on technical analysis. And honestly? That part isn't that hard. There are hundreds of strategies that work. You can learn a solid one in a few weeks.</p>
+      <p>The part nobody tells you about, the part that actually separates consistent traders from people who blow up their accounts, is the mental side.</p>
+
+      <h2>The <em>Information Trap</em></h2>
+      <p>When you start out, you think more information equals more edge. You're watching five different indicators, following three analysts on Twitter, checking the news every hour. All you're doing is creating noise. The more inputs you add, the more ways there are to second-guess a trade you already had conviction in.</p>
+      <p>The best traders I've studied keep it simple. They have a setup, they know the conditions that need to be met, and when those conditions aren't there, they don't trade. That discipline, knowing when <em>not</em> to be in the market, is something most people never develop.</p>
+
+      <div class="pull-quote"><p>"The strategy is the easy part. Finding it, learning it, even testing it. The hard part is actually executing it the same way every single time, especially when you're down."</p></div>
+
+      <h2>Ego Is the <em>Real Risk</em></h2>
+      <p>I've seen it in myself and in everyone who gets serious about markets. You have a good week and suddenly you think you've figured something out. You size up. You take trades outside your setup. You start to believe your own hype. And the market has a very fast and efficient way of correcting that.</p>
+      <p>The ego wants to be right. Trading doesn't reward being right, it rewards being consistent. Those are very different things. A trade can go against you and still be a good trade if it was executed correctly within your rules. A trade can be a winner and still be a bad trade if you sized incorrectly or broke your plan to get there.</p>
+
+      <h2>The <em>Guru Problem</em></h2>
+      <p>Social media has made this worse. There are people online with massive followings whose entire business model is selling you the idea that they have a secret. They post screenshots of winning trades, never the losses. They make trading look like a straight line up.</p>
+      <p>The reality is that every serious trader has drawdowns. Every one of them has had a bad week, a bad month, a bad quarter. The difference is they have the discipline and the mental framework to stick to their process through it rather than chasing losses or abandoning their system the moment it stops working.</p>
+      <p>Be very skeptical of anyone who makes it look easy. It isn't easy. It's learnable, but it takes time, losses, and a lot of honest self-reflection to get there.</p>
+
+      <h2>What Actually <em>Works</em></h2>
+      <p>Keep your setup simple. Define your rules before the market opens, not during. Know your risk before you enter, not after. Take breaks after losses, not to avoid the market, but to reset your head. And stop following people online whose goal is to sell you something.</p>
+      <p>The traders I respect most are quiet about it. They're not posting daily. They're not selling courses. They just have a process they trust and they execute it. That consistency, built over years, is where the edge actually lives.</p>
+    </div>
+    <div class="post-footer">
+      <span class="post-footer-tag">Trading · Mindset · Markets</span>
+      <a href="index.html#blog" class="back-link">← All posts</a>
+    </div>
+  </article>
+  <script>
+    const dt = document.getElementById('dt');
+    dt.textContent = document.body.classList.contains('dark') ? '☀' : '☾';
+    dt.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const d = document.body.classList.contains('dark');
+      dt.textContent = d ? '☀' : '☾';
+      localStorage.setItem('dark', d ? '1' : '0');
+    });
+  </script>
+</body>
+</html>
